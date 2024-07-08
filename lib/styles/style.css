@@ -123,11 +123,22 @@ footer {
 .bottom-footer a {
   text-decoration: none;
   color: white;
+  margin: 0 8px;
+  position: relative;
+  align-self: center;
 }
 
 .separator::after {
-  content: '|';
-  color: gray;
+  
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0.125rem;
+  height: 100%;
+  top: 10%;
+  background: white;
+  opacity: 0.3;
+  align-self: center;  
 }
 
 .bottom-links {
