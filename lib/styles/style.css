@@ -52,13 +52,20 @@ footer {
 /* switch on is absolute to the relative .room-svg button, and .switch1 is absolute to the relative room-svg so why tf */
 .switch1 {
   position: absolute;
-  top: 0;
+  top: 10em;
+  left: 28.5em;
 }
 
 .switch2 {
+  position: absolute;
+  top: 13em;
+  left: 80em;
 }
 
 .switch3 {
+  position: absolute;
+  top: 14em;
+  left: 107em;
 }
 
 .light-switch {
