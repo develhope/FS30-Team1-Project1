@@ -22,11 +22,23 @@ footer {
 }
 
 .top-footer svg {
-  margin: 40px 435px 80px 435px;
+  margin: 40px auto 80px auto;
   padding: 0;
 }
 
 .middle-footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.middle-footer img {
+  height: 18.75em;
+  
 }
 
 .bottom-footer {
@@ -63,6 +75,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .bottom-links button {
