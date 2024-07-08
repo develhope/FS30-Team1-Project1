@@ -5,6 +5,42 @@ body {
   padding: 0;
 }
 
+nav {
+  display: flex;
+}
+.menu {
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+}
+
+.menu-left {
+  display: flex;
+  align-items: center;
+}
+
+.menu-left > img {
+  width: 90px;
+  height: 36px;
+}
+
+.link-list {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 16px;
+}
+
+.menu-link {
+  padding: 16px;
+}
+
+.menu-link a span:hover {
+  font-weight: bold;
+}
+
 footer {
   margin-top: 80px;
   width: auto;
@@ -129,7 +165,6 @@ footer {
 }
 
 .separator::after {
-  
   content: '';
   pointer-events: none;
   position: absolute;
@@ -138,7 +173,7 @@ footer {
   top: 10%;
   background: white;
   opacity: 0.3;
-  align-self: center;  
+  align-self: center;
 }
 
 .bottom-links {
