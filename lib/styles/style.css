@@ -6,14 +6,24 @@ body {
 }
 
 footer {
+  margin-top: 80px;
   width: auto;
   height: auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 .top-footer {
-  text-align: center;
   align-items: center;
   justify-content: center;
+}
+
+.top-footer svg {
+  margin: 40px 435px 80px 435px;
+  padding: 0;
 }
 
 .middle-footer {
@@ -22,7 +32,9 @@ footer {
 .bottom-footer {
   background-color: #0058a3;
   display: flex;
+  flex-direction: column;
   color: white;
+  padding: 80px 32px 32px 32px;
 }
 
 .footer-links {
@@ -30,6 +42,11 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 80px;
+}
+
+.hover:hover {
+  text-decoration: underline;
 }
 
 .bottom-footer a {
@@ -37,6 +54,24 @@ footer {
   color: white;
 }
 
+.separator::after {
+  content: '|';
+  color: gray;
+}
+
+.bottom-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-links button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+}
 @media (max-width: 768px) {
 }
 
