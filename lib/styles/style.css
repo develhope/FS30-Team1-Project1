@@ -47,11 +47,12 @@ footer {
 .room-svg button {
   margin: 0;
   padding: 0;
+  position: relative;
 }
-
+/*figure out the correct position */
 .switch1 {
   position: absolute;
-  left: 40px;
+  top: 0;
 }
 
 .switch2 {
@@ -69,17 +70,21 @@ footer {
   text-align: center;
 }
 
-.light-switch img {
+.smart-home {
   width: 24px;
   height: 24px;
 }
 
 .switch-on {
-  position: inherit;
-  opacity: 1;
-
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(2.75);
   margin: 0;
   padding: 0;
+  width: 24px;
+  height: 23px;
 }
 /*TODO: need state management for on off feature */
 .switch-on:hover {
