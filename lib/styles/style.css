@@ -29,7 +29,7 @@ footer {
 .middle-footer {
   display: flex;
   justify-content: center;
-  position: relative;
+
   overflow-x: hidden;
   padding: 0;
   margin: 0;
@@ -38,29 +38,29 @@ footer {
 
 .middle-footer img {
   height: 18.75em;
+}
+
+.room-svg {
   position: relative;
 }
 
-.light-switches {
-  position: absolute;
+.room-svg button {
   margin: 0;
   padding: 0;
 }
 
-.light-switches:nth-child(1){
-
+.switch1 {
+  position: absolute;
+  left: 40px;
 }
 
-.light-switches:nth-child(2){
-    
+.switch2 {
 }
 
-.light-switches:nth-child(3){
-    
+.switch3 {
 }
 
 .light-switch {
-  position: relative;
   background: none;
   color: inherit;
   border: none;
@@ -75,7 +75,7 @@ footer {
 }
 
 .switch-on {
-  position: absolute;
+  position: inherit;
   opacity: 1;
 
   margin: 0;
@@ -83,7 +83,6 @@ footer {
 }
 /*TODO: need state management for on off feature */
 .switch-on:hover {
-  position: absolute;
   opacity: 1;
   margin: 0;
   padding: 0;
