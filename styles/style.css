@@ -80,17 +80,29 @@ footer {
   position: relative;
 }
 
-.room-svg button {
+.buttons {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: red;
+}
+
+.buttons button {
   margin: 0;
   padding: 0;
   position: relative;
+  
 }
-/* switch on is absolute to the relative .room-svg button, and .switch1 is absolute to the relative room-svg so why tf */
+
 .switch1 {
   position: absolute;
-  top: 10em;
+  top: 0;
   left: 28.5em;
 }
+
+/*
+
+
 
 .switch2 {
   position: absolute;
@@ -103,6 +115,15 @@ footer {
   top: 14em;
   left: 107em;
 }
+
+.light-switch {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  text-align: center;
+}*/
 
 .light-switch {
   background: none;
@@ -147,7 +168,7 @@ footer {
 .footer-links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 80px;
 }
@@ -162,6 +183,7 @@ footer {
   margin: 0 8px;
   position: relative;
   align-self: center;
+  padding: 0 1rem;
 }
 
 .separator::after {
@@ -171,6 +193,7 @@ footer {
   width: 0.125rem;
   height: 100%;
   top: 10%;
+  right: -9%;
   background: white;
   opacity: 0.3;
   align-self: center;
