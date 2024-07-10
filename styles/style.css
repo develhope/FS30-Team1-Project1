@@ -78,6 +78,15 @@ footer {
   position: relative;
 }
 
+#light-svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 100%;
+}
+/*set opacity to 0 and 100 to turn off and on*/
 .buttons {
   position: absolute;
   top: 0;
