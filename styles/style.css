@@ -1,4 +1,4 @@
-body {
+* {
   font-family: 'Noto IKEA', 'Noto Sans', 'Roboto', 'Open Sans', system-ui,
     sans-serif;
   margin: 0;
@@ -37,8 +37,9 @@ nav {
   padding: 16px;
 }
 
-.menu-link a span:hover {
-  font-weight: bold;
+.menu-link span:hover {
+  text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
+  cursor: pointer;
 }
 
 footer {
