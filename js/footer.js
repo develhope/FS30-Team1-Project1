@@ -12,6 +12,6 @@ function turnOffOn() {
   }
 }
 
-button1.onclick = turnOffOn();
-button2.onclick = turnOffOn();
-button3.onclick = turnOffOn();
+button1.onclick = turnOffOn;
+button2.onclick = turnOffOn;
+button3.onclick = turnOffOn;
