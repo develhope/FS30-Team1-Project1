@@ -1,5 +1,5 @@
 * {
-  font-family: 'Noto IKEA', 'Noto Sans', 'Roboto', 'Open Sans', system-ui,
+  font-family: "Noto IKEA", "Noto Sans", "Roboto", "Open Sans", system-ui,
     sans-serif;
   margin: 0;
   padding: 0;
@@ -25,6 +25,7 @@ nav {
 .menu-left > img {
   width: 90px;
   height: 36px;
+  cursor: pointer;
 }
 
 .link-list {
@@ -40,6 +41,10 @@ nav {
 .menu-link span:hover {
   text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
   cursor: pointer;
+}
+
+.menu-right {
+  display: none;
 }
 
 footer {
@@ -179,7 +184,7 @@ footer {
 }
 
 .separator::after {
-  content: '';
+  content: "";
   pointer-events: none;
   position: absolute;
   width: 0.125rem;
@@ -205,8 +210,14 @@ footer {
   padding: 0;
   font: inherit;
 }
-@media (max-width: 768px) {
+@media (max-width: 64rem) {
+  .menu-right {
+    display: block;
+  }
+  .link-list {
+    display: none;
+  }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 47.9375rem) {
 }
