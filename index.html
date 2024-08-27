@@ -21,10 +21,13 @@
               <a class="menu-link"><span>Our business</span></a>
             </div>
           </div>
+
           <div class="menu-right">
             <button id="hamburger">
               <span></span><span></span><span></span>
             </button>
+
+            <aside class="navHamburger">Go Shopping</aside>
           </div>
         </div>
       </nav>
@@ -114,5 +117,14 @@
         </div>
       </div>
     </footer>
+    <script>
+      const hamburgerMenu = document.querySelector("#hamburger");
+
+      const navHamburger = document.querySelector(`.navHamburger`);
+
+      hamburgerMenu.addEventListener(`click`, () => {
+        navHamburger.style.display = `block`;
+      });
+    </script>
   </body>
 </html>

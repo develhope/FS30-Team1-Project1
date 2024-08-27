@@ -38,6 +38,10 @@ nav {
   padding: 16px;
 }
 
+.navHamburger {
+  display: none;
+  height: 100%;
+}
 .menu-link span:hover {
   text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
   cursor: pointer;
