@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ikea</title>
     <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+    <script src="./js/footer.js" defer></script>
   </head>
-
   <body>
     <header>
       <nav>
@@ -59,20 +59,24 @@
       <div class="middle-footer">
         <div class="room-svg">
           <img src="./assets/svg/footer-illustration.svg" />
-          <img id="light-svg" src="./assets/svg/footer-lights.svg" />
+          <img id="light_svg" src="./assets/svg/footer-lights.svg" />
           <span class="clock">
-            <div class="clock--animation" aria-hidden="true"></div>
+            <div class="clock--animation" aria-hidden="true">
+              <!-- <div class="hand hour-hand"></div>
+              <div class="hand miunute-hand"></div>
+              <div class="hand second-hand"></div> -->
+            </div>
           </span>
           <div class="buttons">
-            <button class="light-switch switch1">
+            <button id="button1" class="light-switch switch1">
               <img class="smart-home" src="./assets/svg/smart-home.svg" />
               <img class="switch-on" src="./assets/svg/smart-home_hover.svg" />
             </button>
-            <button class="light-switch switch2">
+            <button id="button2" class="light-switch switch2">
               <img class="smart-home" src="./assets/svg/smart-home.svg" />
               <img class="switch-on" src="./assets/svg/smart-home_hover.svg" />
             </button>
-            <button class="light-switch switch3">
+            <button id="button3" class="light-switch switch3">
               <img class="smart-home" src="./assets/svg/smart-home.svg" />
               <img class="switch-on" src="./assets/svg/smart-home_hover.svg" />
             </button>

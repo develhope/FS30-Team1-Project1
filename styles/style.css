@@ -82,6 +82,8 @@ footer {
   padding: 0;
 }
 
+
+
 .middle-footer {
   display: flex;
   justify-content: center;
@@ -98,7 +100,7 @@ footer {
   position: relative;
 }
 
-#light-svg {
+#light_svg {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -106,6 +108,7 @@ footer {
   right: 0;
   opacity: 100%;
 }
+
 /*set opacity to 0 and 100 to turn off and on*/
 .buttons {
   position: absolute;
