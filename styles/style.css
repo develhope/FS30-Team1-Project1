@@ -1,5 +1,5 @@
 * {
-  font-family: "Noto IKEA", "Noto Sans", "Roboto", "Open Sans", system-ui,
+  font-family: 'Noto IKEA', 'Noto Sans', 'Roboto', 'Open Sans', system-ui,
     sans-serif;
   margin: 0;
   padding: 0;
@@ -81,8 +81,27 @@ footer {
   margin: 40px auto 80px auto;
   padding: 0;
 }
+.clock {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4em;
+  height: 4em;
+  background-color: red;
+}
+.clock--animation {
+  width: 20px;
+  height: 20px;
+}
 
-
+.hour-hand {
+  width: 1.5%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
 
 .middle-footer {
   display: flex;
@@ -202,7 +221,7 @@ footer {
 }
 
 .separator::after {
-  content: "";
+  content: '';
   pointer-events: none;
   position: absolute;
   width: 0.125rem;
