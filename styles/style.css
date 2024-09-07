@@ -84,6 +84,7 @@ footer {
 .clock {
   position: absolute;
   top: 0;
+  bottom: 3em;
   left: 50%;
   width: 4em;
   height: 4em;
