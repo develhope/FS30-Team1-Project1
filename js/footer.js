@@ -41,9 +41,12 @@ setDate();
 
 const lightsSVG = document.querySelector('#light_svg');
 
+function randomHex() {
+  return Math.floor(Math.random() * 255);
+}
+
 function rgbLight() {
-  const randomColor =
-    'rgb(${Math.floor(Math.random()*255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}';
+  const randomColor = `rgb(${randomHex()},${randomHex()},${randomHex()})`;
   lightSvg.style.fill = randomColor;
 }
 
