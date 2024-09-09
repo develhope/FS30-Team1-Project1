@@ -102,11 +102,11 @@ footer {
 }
 
 .hour-hand {
-  height: 17px; /* Example length for the hour hand */
-  top: 50%; /* Start from the middle */
-  left: 50%; /* Align to center */
-  transform-origin: top; /* Rotate from the bottom */
-  transform: translate(-50%, -50%) rotate(90deg); /* Rotate to position */
+  height: 17px; 
+  top: 50%; 
+  left: 50%; 
+  transform-origin: top; 
+  transform: translate(-50%, -50%) rotate(90deg); 
 }
 
 .minute-hand {
@@ -151,7 +151,7 @@ footer {
   fill: none;
 }
 
-/*set opacity to 0 and 100 to turn off and on*/
+
 .buttons {
   position: absolute;
   top: 0;
