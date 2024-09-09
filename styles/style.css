@@ -65,6 +65,12 @@ nav {
   flex-direction: column;
   border: none;
 }
+/*CONTENT*/
+.content-grid{
+  display: grid;
+
+}
+/*FOOTER*/
 footer {
   margin-top: 80px;
   width: auto;
