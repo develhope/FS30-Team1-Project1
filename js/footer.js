@@ -2,13 +2,17 @@ const button1 = document.querySelector('#button1');
 const button2 = document.querySelector('#button2');
 const button3 = document.querySelector('#button3');
 const lightSvg = document.querySelector('#light_svg');
+const stopColor = document.querySelector('.stop');
 lightSvg.style.visibility = 'hidden';
 
 function turnOffOn() {
   if (lightSvg.style.visibility === 'hidden') {
     lightSvg.style.visibility = 'visible';
-  } else {
+    colorChanger();
+  } else if (interval) {
     lightSvg.style.visibility = 'hidden';
+    clearInterval(interval);
+    interval = null;
   }
 }
 
@@ -45,9 +49,16 @@ function randomHex() {
   return Math.floor(Math.random() * 255);
 }
 
-function rgbLight() {
-  const randomColor = `rgb(${randomHex()},${randomHex()},${randomHex()})`;
-  lightSvg.style.fill = randomColor;
+const colors = ['yellow', 'red', 'green', 'blue', 'orange', 'purple'];
+let colorIndex = 0;
+let interval;
+function colorChanger() {
+  interval = setInterval(() => {
+    stopColor.setAttribute('stop-color', colors[colorIndex]);
+    colorIndex = (colorIndex + 1) % colors.length;
+  }, 1200);
 }
-
-setInterval(rgbLight, 1000);
+// function rgbLight() {
+//   const randomColor = `rgb(${randomHex()},${randomHex()},${randomHex()})`;
+//   lightSvg.style.fill = randomColor;
+// }
