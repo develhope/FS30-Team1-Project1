@@ -275,13 +275,13 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 120px;
-  padding: 20px;
+  gap: 60px;
+  padding: 15px;
 }
 #side-bar li:first-child {
   border-radius: 8px;
-  border: 10px solid yellow;
-  background-color: yellow;
+  border: 10px solid #ffe53a;
+  background-color: #ffe53a;
 }
 
 @media (max-width: 64rem) {
