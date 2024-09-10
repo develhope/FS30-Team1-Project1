@@ -266,6 +266,24 @@ footer {
   font: inherit;
 }
 
+.side-menu-container {
+  font-weight: bold;
+  padding: 10px;
+}
+
+#side-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 120px;
+  padding: 20px;
+}
+#side-bar li:first-child {
+  border-radius: 8px;
+  border: 10px solid yellow;
+  background-color: yellow;
+}
+
 @media (max-width: 64rem) {
   .menu-right {
     display: block;
