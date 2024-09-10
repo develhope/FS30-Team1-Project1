@@ -3,6 +3,7 @@
     sans-serif;
   margin: 0;
   padding: 0;
+  /* overflow-x: hidden; chiedi a bernard se si può fare senza sballare tutto */
 }
 .container {
   width: 100%;
@@ -70,6 +71,7 @@ nav {
 .drawer.open {
   right: 0;
 }
+
 #hamburger span {
   border: 2px solid black;
   margin-top: 2px;
@@ -284,6 +286,19 @@ footer {
   background-color: #ffe53a;
 }
 
+#close-container {
+  display: flex;
+  justify-content: end;
+  border: none;
+  background-color: #fff;
+  margin-top: 32px;
+  margin-right: 32px;
+}
+
+#close-button {
+  border: none;
+  background-color: white;
+}
 @media (max-width: 64rem) {
   .menu-right {
     display: block;
