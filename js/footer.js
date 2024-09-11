@@ -2,14 +2,22 @@ const button1 = document.querySelector('#button1');
 const button2 = document.querySelector('#button2');
 const button3 = document.querySelector('#button3');
 const lightSvg = document.querySelector('#light_svg');
-const stopColor = document.querySelector('.stop');
+// const stopColor = document.querySelector('.stop');
+const allGradients = document.querySelectorAll('linearGradient')
 lightSvg.style.visibility = 'hidden';
+
+let colorIndex = 0;
+let interval;
 
 function turnOffOn() {
   if (lightSvg.style.visibility === 'hidden') {
     lightSvg.style.visibility = 'visible';
-    colorChanger();
-  } else if (interval) {
+    colorIndex = 0
+    changeAllGradient(colors[colorIndex])
+    if (!interval) {
+      colorChanger();
+    }
+  } else {
     lightSvg.style.visibility = 'hidden';
     clearInterval(interval);
     interval = null;
@@ -50,12 +58,21 @@ function randomHex() {
 }
 
 const colors = ['yellow', 'red', 'green', 'blue', 'orange', 'purple'];
-let colorIndex = 0;
-let interval;
+
+function changeAllGradient(color) {
+  allGradients.forEach(gradient => {
+    const stops = gradient.querySelectorAll('stop')
+    stops.forEach(stop => {
+      stop.setAttribute('stop-color', color)
+    })
+  })
+}
+
 function colorChanger() {
   interval = setInterval(() => {
-    stopColor.setAttribute('stop-color', colors[colorIndex]);
+    // stopColor.setAttribute('stop-color', colors[colorIndex]);
     colorIndex = (colorIndex + 1) % colors.length;
+    changeAllGradient(colors[colorIndex])
   }, 1200);
 }
 // function rgbLight() {

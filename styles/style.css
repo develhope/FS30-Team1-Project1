@@ -1,10 +1,12 @@
 * {
-  font-family: 'Noto IKEA', 'Noto Sans', 'Roboto', 'Open Sans', system-ui,
+  font-family: "Noto IKEA", "Noto Sans", "Roboto", "Open Sans", system-ui,
     sans-serif;
   margin: 0;
   padding: 0;
 }
-
+.container {
+  width: 100%;
+}
 nav {
   display: flex;
 }
@@ -66,6 +68,7 @@ nav {
   border: none;
 }
 footer {
+  width: 100%;
   margin-top: 80px;
   width: auto;
   height: auto;
@@ -102,11 +105,11 @@ footer {
 }
 
 .hour-hand {
-  height: 17px; 
-  top: 50%; 
-  left: 50%; 
-  transform-origin: top; 
-  transform: translate(-50%, -50%) rotate(90deg); 
+  height: 17px;
+  top: 50%;
+  left: 50%;
+  transform-origin: top;
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 
 .minute-hand {
@@ -140,6 +143,10 @@ footer {
 .room-svg {
   position: relative;
 }
+.room-svg+img {
+ width: 100%;
+ object-fit: cover;
+}
 
 #light_svg {
   position: absolute;
@@ -150,7 +157,6 @@ footer {
   opacity: 100%;
   fill: none;
 }
-
 
 .buttons {
   position: absolute;
@@ -244,7 +250,7 @@ footer {
 }
 
 .separator::after {
-  content: '';
+  content: "";
   pointer-events: none;
   position: absolute;
   width: 0.125rem;
@@ -270,6 +276,12 @@ footer {
   padding: 0;
   font: inherit;
 }
+
+#light_svg {
+  filter: brightness(1.5);
+  opacity: 0.3;
+}
+
 @media (max-width: 64rem) {
   .menu-right {
     display: block;
