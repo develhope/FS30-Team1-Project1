@@ -1,10 +1,12 @@
 * {
-  font-family: 'Noto IKEA', 'Noto Sans', 'Roboto', 'Open Sans', system-ui,
+  font-family: "Noto IKEA", "Noto Sans", "Roboto", "Open Sans", system-ui,
     sans-serif;
   margin: 0;
   padding: 0;
 }
-
+.container {
+  width: 100%;
+}
 nav {
   display: flex;
 }
@@ -72,6 +74,7 @@ nav {
 }
 /*FOOTER*/
 footer {
+  width: 100%;
   margin-top: 80px;
   width: auto;
   height: auto;
@@ -89,24 +92,46 @@ footer {
 }
 .clock {
   position: absolute;
-  top: 0;
-  left: 50%;
+  top: 14%;
+  left: 51.5%;
+  transform: translate(-50%, -40%);
   width: 4em;
   height: 4em;
-  background-color: red;
 }
 .clock--animation {
-  width: 20px;
-  height: 20px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.hand {
+  position: absolute;
+  width: 2px;
+  background-color: #0058a3;
 }
 
 .hour-hand {
-  width: 1.5%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
+  height: 17px;
+  top: 50%;
+  left: 50%;
+  transform-origin: top;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.minute-hand {
+  height: 19px;
+  top: 50%;
+  left: 50%;
+  transform-origin: top;
+  width: 1.2px;
+}
+
+.second-hand {
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  transform-origin: top;
+  width: 1px;
 }
 
 .middle-footer {
@@ -124,6 +149,10 @@ footer {
 .room-svg {
   position: relative;
 }
+.room-svg+img {
+ width: 100%;
+ object-fit: cover;
+}
 
 #light_svg {
   position: absolute;
@@ -132,9 +161,9 @@ footer {
   left: 0;
   right: 0;
   opacity: 100%;
+  fill: none;
 }
 
-/*set opacity to 0 and 100 to turn off and on*/
 .buttons {
   position: absolute;
   top: 0;
@@ -190,7 +219,7 @@ footer {
   width: 24px;
   height: 23px;
 }
-/*TODO: need state management for on off feature */
+
 .switch-on:hover {
   opacity: 1;
   margin: 0;
@@ -227,7 +256,7 @@ footer {
 }
 
 .separator::after {
-  content: '';
+  content: "";
   pointer-events: none;
   position: absolute;
   width: 0.125rem;
@@ -253,6 +282,12 @@ footer {
   padding: 0;
   font: inherit;
 }
+
+#light_svg {
+  filter: brightness(1.5);
+  opacity: 0.3;
+}
+
 @media (max-width: 64rem) {
   .menu-right {
     display: block;
