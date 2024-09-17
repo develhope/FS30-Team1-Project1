@@ -1,14 +1,26 @@
 const button1 = document.querySelector('#button1');
 const button2 = document.querySelector('#button2');
 const button3 = document.querySelector('#button3');
-const light_svg = document.querySelector('#light_svg');
-light_svg.style.visibility = 'hidden';
+const lightSvg = document.querySelector('#light_svg');
+// const stopColor = document.querySelector('.stop');
+const allGradients = document.querySelectorAll('linearGradient')
+lightSvg.style.visibility = 'hidden';
+
+let colorIndex = 0;
+let interval;
 
 function turnOffOn() {
-  if (light_svg.style.visibility === 'hidden') {
-    light_svg.style.visibility = 'visible';
+  if (lightSvg.style.visibility === 'hidden') {
+    lightSvg.style.visibility = 'visible';
+    colorIndex = 0
+    changeAllGradient(colors[colorIndex])
+    if (!interval) {
+      colorChanger();
+    }
   } else {
-    light_svg.style.visibility = 'hidden';
+    lightSvg.style.visibility = 'hidden';
+    clearInterval(interval);
+    interval = null;
   }
 }
 
@@ -33,7 +45,7 @@ function setDate() {
 
   const hours = now.getHours();
   const hoursDegrees = (hours / 12) * 360 + (minutes / 60) * 30 + 90;
-  hourHand.style.transform = `rotate(${minutesDegrees}deg)`;
+  hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
 }
 
 setInterval(setDate, 1000);
@@ -41,6 +53,29 @@ setDate();
 
 const lightsSVG = document.querySelector('#light_svg');
 
-function rgbLight() {}
+function randomHex() {
+  return Math.floor(Math.random() * 255);
+}
 
-setInterval(rgbLight, 1000);
+const colors = ['yellow', 'red', 'green', 'blue', 'orange', 'purple'];
+
+function changeAllGradient(color) {
+  allGradients.forEach(gradient => {
+    const stops = gradient.querySelectorAll('stop')
+    stops.forEach(stop => {
+      stop.setAttribute('stop-color', color)
+    })
+  })
+}
+
+function colorChanger() {
+  interval = setInterval(() => {
+    // stopColor.setAttribute('stop-color', colors[colorIndex]);
+    colorIndex = (colorIndex + 1) % colors.length;
+    changeAllGradient(colors[colorIndex])
+  }, 1200);
+}
+// function rgbLight() {
+//   const randomColor = `rgb(${randomHex()},${randomHex()},${randomHex()})`;
+//   lightSvg.style.fill = randomColor;
+// }
