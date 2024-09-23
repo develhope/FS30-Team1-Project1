@@ -1,5 +1,5 @@
 * {
-  font-family: "Noto IKEA", "Noto Sans", "Roboto", "Open Sans", system-ui,
+  font-family: 'Noto IKEA', 'Noto Sans', 'Roboto', 'Open Sans', system-ui,
     sans-serif;
   margin: 0;
   padding: 0;
@@ -24,7 +24,7 @@ nav {
   align-items: center;
 }
 
-.menu-left > img {
+.home-link > img {
   width: 90px;
   height: 36px;
   cursor: pointer;
@@ -38,6 +38,8 @@ nav {
 
 .menu-link {
   padding: 16px;
+  text-decoration: none;
+  color: black;
 }
 
 .navHamburger {
@@ -45,6 +47,11 @@ nav {
   height: 100%;
 }
 .menu-link span:hover {
+  text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
+  cursor: pointer;
+}
+
+.active {
   text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
   cursor: pointer;
 }
@@ -68,9 +75,8 @@ nav {
   border: none;
 }
 /*CONTENT*/
-.content-grid{
+.content-grid {
   display: grid;
-
 }
 /*FOOTER*/
 footer {
@@ -149,9 +155,9 @@ footer {
 .room-svg {
   position: relative;
 }
-.room-svg+img {
- width: 100%;
- object-fit: cover;
+.room-svg + img {
+  width: 100%;
+  object-fit: cover;
 }
 
 #light_svg {
@@ -256,7 +262,7 @@ footer {
 }
 
 .separator::after {
-  content: "";
+  content: '';
   pointer-events: none;
   position: absolute;
   width: 0.125rem;
