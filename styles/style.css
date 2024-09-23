@@ -280,7 +280,7 @@ footer {
   gap: 60px;
   padding: 15px;
 }
-#side-bar li:first-child {
+.container-block {
   border-radius: 8px;
   border: 10px solid #ffe53a;
   background-color: #ffe53a;
@@ -298,6 +298,15 @@ footer {
 #close-button {
   border: none;
   background-color: white;
+}
+
+.arrow1 {
+  float: right;
+  transform: scaleX(-1);
+}
+
+.conatiner-block {
+  display: flex;
 }
 @media (max-width: 64rem) {
   .menu-right {
