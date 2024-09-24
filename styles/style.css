@@ -54,6 +54,7 @@ nav {
 .active {
   text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .menu-right {
@@ -78,6 +79,42 @@ nav {
 .content-grid {
   display: grid;
 }
+
+/* OUR BUSINESS */
+.main-content-business {
+  margin: 0 auto;
+}
+.inner-container-vertical-card {
+  display: grid;
+  grid-template-columns: 330px 330px 330px 330px;
+  grid-template-rows: 579px;
+  margin-top: 40px;
+  margin-left: 50%;
+  margin-right: 50%;
+  column-gap: 24px;
+}
+
+.img-holder {
+  border-radius: 8px;
+  border: 0px solid black;
+  overflow: hidden;
+}
+
+.img-holder > img {
+  object-position: 50% 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.tall-card {
+  font-weight: bold;
+  font-size: 14px;
+}
+.bottom-tall-card {
+  display: flex;
+}
+
+
 /*FOOTER*/
 footer {
   width: 100%;
