@@ -89,8 +89,7 @@ nav {
   grid-template-columns: 330px 330px 330px 330px;
   grid-template-rows: 579px;
   margin-top: 40px;
-  margin-left: 50%;
-  margin-right: 50%;
+
   column-gap: 24px;
 }
 
@@ -113,7 +112,9 @@ nav {
 .bottom-tall-card {
   display: flex;
 }
-
+.right {
+  transform: scale(-1);
+}
 
 /*FOOTER*/
 footer {
