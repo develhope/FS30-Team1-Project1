@@ -387,7 +387,7 @@ footer {
 .search-icon {
   position: absolute;
   left: 10px;
-  top: 50%;
+  top: 20%;
   transform: translateY(-50%);
   font-size: 18px;
 }
@@ -396,6 +396,15 @@ footer {
   background-color: #ffe53a;
 }
 
-#hr-white {
-  color: #fff;
+#button-list {
+  display: flex;
+  overflow-y: scroll;
+  height: 80px;
+}
+
+.list-language-ikea {
+  border: none;
+  background-color: rgb(255, 240, 148);
+  cursor: pointer;
+  margin-top: 10px;
 }
