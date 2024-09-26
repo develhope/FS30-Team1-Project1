@@ -288,9 +288,14 @@ footer {
   align-items: center;
 }
 .container-block-yellow {
-  border-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   border: 10px solid #ffe53a;
   background-color: #ffe53a;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #close-container {
@@ -314,13 +319,6 @@ footer {
 
 .container-block {
   display: flex;
-}
-
-.container-block-yellow {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .arrow {
@@ -356,4 +354,48 @@ footer {
   border-bottom: 1px solid #ddd;
   height: 115px;
   align-items: center;
+}
+
+.list-container {
+  /* border-bottom-right-radius: 8px; */
+  border-bottom-left-radius: 8px;
+  border: 10px solid #ffe53a;
+  margin-top: 1px;
+
+  background-color: #ffe53a;
+}
+
+.box-light-yellow {
+  border-radius: 4px;
+  background-color: rgb(255, 240, 148);
+}
+
+#search-box {
+  position: relative;
+  border-radius: 8px;
+  /* margin: 0px 0px 8px 8px; */
+  padding: 8px;
+}
+
+#search-box > input {
+  border-style: none;
+  width: 135px;
+  height: 40px;
+  padding-left: 30px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+
+.store-buttom {
+  background-color: #ffe53a;
+}
+
+#hr-white {
+  color: #fff;
 }
