@@ -81,14 +81,14 @@ nav {
 }
 
 /* OUR BUSINESS */
-.main-content-business {
-  margin: 0 auto;
+#main-content-business {
+  margin: 0 16px 0 16px;
 }
 .inner-container-vertical-card {
   display: grid;
   grid-template-columns: 330px 330px 330px 330px;
   grid-template-rows: 579px;
-  margin-top: 40px;
+  margin: 40px auto 150px auto;
 
   column-gap: 24px;
 }
