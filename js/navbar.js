@@ -19,7 +19,6 @@ closeButton.addEventListener(`click`, () => {
 });
 
 closeIkea.addEventListener(`click`, () => {
-  console.log("ciao");
   document
     .querySelector(".box-yellow")
     .classList.toggle("go-shopping-menu-closed");
