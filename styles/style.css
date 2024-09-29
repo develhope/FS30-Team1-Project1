@@ -392,9 +392,12 @@ footer {
 #search-box > input {
   border-style: none;
   width: 320px;
-  height: 40px;
   padding-left: 30px;
   border-radius: 8px;
+}
+
+.find-store-input-open {
+  height: 40px;
 }
 
 .search-icon {
@@ -408,11 +411,16 @@ footer {
 .store-buttom {
   background-color: #ffe53a;
   display: flex;
+  position: relative;
+  z-index: 100;
 }
 
 #button-list {
   display: flex;
   overflow-y: scroll;
+}
+
+.button-list-open {
   height: 80px;
 }
 
@@ -457,4 +465,21 @@ footer {
 
 .overlay.active {
   display: block !important;
+}
+
+#close-store {
+  display: flex;
+  border: none;
+  /* margin-top: 32px; */
+  margin-right: 32px;
+}
+
+.close-Ikea {
+  border: none;
+  cursor: pointer;
+  background-color: #ffe53a;
+}
+
+.go-shopping-menu-closed {
+  height: 0;
 }

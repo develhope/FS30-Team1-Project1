@@ -95,9 +95,13 @@
                           ></path>
                         </svg>
 
-                        <input type="text" placeholder="Find online store" />
-                        <div>
-                          <ul id="button-list">
+                        <input
+                          class="find-store-input find-store-input-open"
+                          type="text"
+                          placeholder="Find online store"
+                        />
+                        <div id="open-button-list">
+                          <ul id="button-list" class="button-list-open">
                             <li>
                               <button class="list-language-ikea">
                                 IKEA.ch(Deutsch)
@@ -155,25 +159,29 @@
                     <ul></ul>
                   </div>
                 </div>
-                <div class="store-buttom">
-                  <p>
-                    Store:<strong>IKEA.ch</strong>(de)<svg
-                      width="16"
-                      height="9"
-                      viewBox="0 0 16 9"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-hidden="true"
-                      class="arrow-transition"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M16 1.38462L14.5455 0L8 6.23077L1.45455 0L0 1.38462L8 9L16 1.38462Z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                  </p>
+                <div class="store-buttom IKEA">
+                  <aside>
+                    <div id="close-store">
+                      <button class="close-Ikea">
+                        Store:<strong>IKEA.ch</strong>(de)<svg
+                          width="16"
+                          height="9"
+                          viewBox="0 0 16 9"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          class="arrow-transition"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M16 1.38462L14.5455 0L8 6.23077L1.45455 0L0 1.38462L8 9L16 1.38462Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </aside>
                 </div>
               </div>
             </div>
@@ -322,8 +330,8 @@
             <a href="https://ikeafoundation.org/" class="hover separator"
               >IKEA Foundation</a
             >
-            <a href="https://ikeamuseum.com/en/" class="hover separator"
-              >IKEA Museum</a
+            <ai href="https://ikeamuseum.com/en/" class="hover separator"
+              >IKEA Museum</ai
             >
             <a
               href="https://www.ikeasocialentrepreneurship.org/"
