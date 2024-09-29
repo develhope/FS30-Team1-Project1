@@ -3,6 +3,7 @@
     sans-serif;
   margin: 0;
   padding: 0;
+
   /* overflow-x: hidden; chiedi a bernard se si può fare senza sballare tutto */
 }
 .container {
@@ -57,8 +58,8 @@ nav {
   top: 0;
   flex-direction: column;
   background-color: white;
-  width: 250px;
-  height: 100vh;
+  width: 20vh;
+  height: 120vh;
   right: -250px;
   transition: right 0.3s ease;
   z-index: 1;
@@ -70,6 +71,7 @@ nav {
 }
 .drawer.open {
   right: 0;
+  width: 60vh;
 }
 
 #hamburger span {
@@ -280,8 +282,12 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 60px;
+  /* 
+  gap: 60px; */
   padding: 15px;
+  z-index: 999;
+  /* width: 30vh;
+  height: 40vh; */
 }
 
 #side-bar > div {
@@ -315,6 +321,12 @@ footer {
 .arrow1 {
   float: right;
   transform: scaleX(-1);
+  border: 2px solid black;
+  border-radius: 50%;
+  height: px;
+  width: px;
+  background-color: black;
+  color: white;
 }
 
 .container-block {
@@ -350,7 +362,7 @@ footer {
 .side-menu-list li {
   display: flex;
   justify-content: space-between;
-  padding: 15px 20px;
+  /* padding: 15px 20px; */
   border-bottom: 1px solid #ddd;
   height: 115px;
   align-items: center;
@@ -379,9 +391,10 @@ footer {
 
 #search-box > input {
   border-style: none;
-  width: 135px;
+  width: 320px;
   height: 40px;
   padding-left: 30px;
+  border-radius: 8px;
 }
 
 .search-icon {
@@ -394,6 +407,7 @@ footer {
 
 .store-buttom {
   background-color: #ffe53a;
+  display: flex;
 }
 
 #button-list {
@@ -402,9 +416,45 @@ footer {
   height: 80px;
 }
 
+#button-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+#button-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#button-list::-webkit-scrollbar-thumb {
+  background: #615f5f;
+  border-radius: 2px;
+}
+
+#button-list::-webkit-scrollbar-thumb:hover {
+  background: #747272;
+}
+
 .list-language-ikea {
   border: none;
   background-color: rgb(255, 240, 148);
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 9px;
+}
+
+.arrow-transition {
+  gap: 20px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.overlay.active {
+  display: block !important;
 }
