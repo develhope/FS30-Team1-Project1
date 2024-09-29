@@ -1,5 +1,5 @@
 * {
-  font-family: "Noto IKEA", "Noto Sans", "Roboto", "Open Sans", system-ui,
+  font-family: 'Noto IKEA', 'Noto Sans', 'Roboto', 'Open Sans', system-ui,
     sans-serif;
   margin: 0;
   padding: 0;
@@ -68,10 +68,10 @@ nav {
   border: none;
 }
 /*CONTENT*/
-.content-grid{
+.content-grid {
   display: grid;
-
 }
+
 /*FOOTER*/
 footer {
   width: 100%;
@@ -149,9 +149,9 @@ footer {
 .room-svg {
   position: relative;
 }
-.room-svg+img {
- width: 100%;
- object-fit: cover;
+.room-svg + img {
+  width: 100%;
+  object-fit: cover;
 }
 
 #light_svg {
@@ -256,7 +256,7 @@ footer {
 }
 
 .separator::after {
-  content: "";
+  content: '';
   pointer-events: none;
   position: absolute;
   width: 0.125rem;
@@ -286,20 +286,6 @@ footer {
 #light_svg {
   filter: brightness(1.5);
   opacity: 0.3;
-}
-
-/* .big-card {
-  width: 100%;
-  height:100% ;
-} */
- .content-grid{
-  display: grid;
-  grid;
- }
-
- .big-card img {
-  width: 100%;
-  height: 100%;
 }
 
 @media (max-width: 64rem) {
