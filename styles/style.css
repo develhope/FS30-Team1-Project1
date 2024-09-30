@@ -19,6 +19,9 @@ nav {
   width: 100%;
   margin: auto;
   align-items: center;
+  position: fixed;
+  top: 0;
+  transition: top 0.3s;
 }
 
 .menu-left {
@@ -112,7 +115,7 @@ footer {
   left: 50%;
   width: 4em;
   height: 4em;
-  background-color: red;
+  /* background-color: red; */
 }
 .clock--animation {
   width: 20px;
@@ -282,6 +285,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 1;
   /* 
   gap: 60px; */
   padding: 15px;
@@ -302,6 +306,8 @@ footer {
   list-style: none;
   justify-content: space-between;
   align-items: center;
+  padding: 16px;
+  font-size: 24px;
 }
 
 #close-container {
@@ -323,10 +329,17 @@ footer {
   transform: scaleX(-1);
   border: 2px solid black;
   border-radius: 50%;
-  height: 20px;
-  width: 20px;
+  height: 5vh;
+  width: 5vh;
   background-color: black;
   color: white;
+  position: relative;
+}
+
+.go-shopping-arrow {
+  left: 14%;
+  position: absolute;
+  top: 18%;
 }
 
 .container-block {
@@ -336,9 +349,7 @@ footer {
 .arrow {
   float: right;
 }
-.arrow-transition {
-  margin-left: 236px;
-}
+
 @media (max-width: 64rem) {
   #hamburger span {
     display: block;
@@ -360,6 +371,7 @@ footer {
   list-style: none;
   margin: 20px 0 0;
   padding: 20px 0px 18px 0;
+  font-size: 1.5625rem;
 }
 
 .side-menu-list li {
@@ -372,12 +384,17 @@ footer {
 }
 
 .list-container {
-  /* border-bottom-right-radius: 8px; */
+  border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
-  border: 10px solid #ffe53a;
+
   margin-top: 1px;
 
   background-color: #ffe53a;
+}
+
+.box-yellow {
+  display: none;
+  border: 10px solid #ffe53a;
 }
 
 .box-light-yellow {
@@ -421,7 +438,15 @@ footer {
 #button-list {
   display: flex;
   overflow-y: scroll;
-  gap: 1px;
+  /* gap: 0.5px; */
+}
+
+#button-list li:hover {
+  background-color: #f7eeb4;
+}
+
+#button-list li button {
+  background-color: inherit;
 }
 
 .button-list-open {
@@ -452,10 +477,6 @@ footer {
   margin-top: 9px;
 }
 
-.arrow-transition {
-  gap: 20px;
-}
-
 .overlay {
   display: none;
   position: fixed;
@@ -479,9 +500,20 @@ footer {
 }
 
 .close-Ikea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
   border: none;
   cursor: pointer;
   background-color: #ffe53a;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.close-Ikea:hover {
+  background-color: rgb(255, 240, 148);
 }
 
 .open-button-list {
@@ -491,4 +523,18 @@ footer {
 
 .go-shopping-menu-closed {
   height: 0;
+}
+
+/* ********************************* */
+
+.rotate-icon {
+  transition: transform 0.5s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.open {
+  display: block;
 }
