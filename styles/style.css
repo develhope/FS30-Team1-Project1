@@ -59,7 +59,7 @@ nav {
   flex-direction: column;
   background-color: white;
   width: 20vh;
-  height: 120vh;
+  /* height: 120vh; */
   right: -250px;
   transition: right 0.3s ease;
   z-index: 1;
@@ -275,7 +275,7 @@ footer {
 
 .side-menu-container {
   font-weight: bold;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 #side-bar {
@@ -323,8 +323,8 @@ footer {
   transform: scaleX(-1);
   border: 2px solid black;
   border-radius: 50%;
-  height: px;
-  width: px;
+  height: 20px;
+  width: 20px;
   background-color: black;
   color: white;
 }
@@ -335,6 +335,9 @@ footer {
 
 .arrow {
   float: right;
+}
+.arrow-transition {
+  margin-left: 236px;
 }
 @media (max-width: 64rem) {
   #hamburger span {
@@ -418,6 +421,7 @@ footer {
 #button-list {
   display: flex;
   overflow-y: scroll;
+  gap: 1px;
 }
 
 .button-list-open {
