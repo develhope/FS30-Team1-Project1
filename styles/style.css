@@ -93,6 +93,48 @@ nav {
 #hamburger span {
   display: none;
 }
+
+.mini-picker-container {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
+  align-content: center;
+  border-radius: 8px;
+}
+.mini-picker {
+  border: 10px solid #ffe53a;
+  background-color: #ffe53a;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-bottom: 0;
+}
+
+#picker {
+  border: none;
+  background-color: #ffe53a;
+}
+
+.li-picker {
+  border: none;
+  background-color: rgb(255, 240, 148);
+  margin: 8px;
+}
+.close-minipicker {
+  border: 10px solid #ffe53a;
+  background-color: rgb(255, 240, 148);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.close-minipicker ul {
+  list-style: none;
+  background-color: rgb(255, 240, 148);
+  text-decoration: none;
+  overflow-y: scroll;
+  height: 200px;
+  border-radius: 8px;
+}
+
 footer {
   margin-top: 80px;
   width: auto;
@@ -358,6 +400,9 @@ footer {
     display: block;
   }
   .link-list {
+    display: none;
+  }
+  .mini-picker-container {
     display: none;
   }
 }
