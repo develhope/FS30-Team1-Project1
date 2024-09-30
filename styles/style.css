@@ -480,6 +480,11 @@ footer {
   background-color: #ffe53a;
 }
 
+.open-button-list {
+  cursor: pointer;
+  background-color: rgb(255, 240, 148);
+}
+
 .go-shopping-menu-closed {
   height: 0;
 }
