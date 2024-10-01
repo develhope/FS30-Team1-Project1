@@ -126,10 +126,9 @@ nav {
   margin: 8px;
 }
 .minipicker-list {
-  border: 10px solid #ffdb00;
   background-color: rgb(255, 240, 148);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-radius: 8px;
+  padding-top: 3px;
 }
 
 .search-box-minipicker {
@@ -187,6 +186,12 @@ nav {
   background: #747272;
 }
 
+.mini-picker-light-yellow {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 8px solid #ffdb00;
+  background-color: #ffdb00;
+}
 footer {
   margin-top: 80px;
   width: auto;
