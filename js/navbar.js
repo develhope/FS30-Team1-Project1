@@ -11,6 +11,9 @@ const icon = document.querySelector(".rotate-icon");
 const menu = document.querySelector(".menu");
 
 const miniPickerOpener = document.querySelector(".drawer-opener");
+const miniPickerContainer = document.querySelector(".mini-picker-container");
+
+const rotateArrowMiniPicker = document.querySelector(".minipicker-list");
 
 let isShowing = false;
 
@@ -59,15 +62,27 @@ window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollPos > currentScrollPos) {
     menu.style.top = "0";
+    miniPickerContainer.style.top = "5%";
   } else {
     menu.style.top = "-100px";
+    miniPickerContainer.style.top = "-10%";
   }
   prevScrollPos = currentScrollPos;
 };
 
 miniPickerOpener.addEventListener("click", () => {
-  console.log("ciao");
   document
     .querySelector(".minipicker-list-container")
     .classList.toggle("minipicker-list-container-closed");
+
+  document
+    .querySelector(".website-link")
+    .classList.toggle("website-link-closed");
+
+  document
+    .querySelector(".drawer-opener")
+    .classList.toggle("drawer-opener-radius");
+
+  rotateArrowMiniPicker.classList.toggle("open");
+  icon.classList.toggle("rotate");
 });
