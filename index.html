@@ -1,406 +1,571 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ikea</title>
+    <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+    <script src="./js/footer.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ikea</title>
-  <link rel="stylesheet" href="./styles/style.css" type="text/css" />
-  <script src="./js/footer.js" defer></script>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <div class="menu">
-        <div class="menu-left">
-          <img src="./assets/svg/ikea-logo.svg" class="logo" />
-          <div class="link-list">
-            <a class="menu-link"><span>Stories</span></a>
-            <a class="menu-link"><span>Jobs</span></a>
-            <a class="menu-link"><span>Newsroom</span></a>
-            <a class="menu-link"><span>Our business</span></a>
+  <body>
+    <header>
+      <nav>
+        <div class="menu">
+          <div class="menu-left">
+            <img src="./assets/svg/ikea-logo.svg" class="logo" />
+            <div class="link-list">
+              <a class="menu-link"><span>Stories</span></a>
+              <a class="menu-link"><span>Jobs</span></a>
+              <a class="menu-link"><span>Newsroom</span></a>
+              <a class="menu-link"><span>Our business</span></a>
+            </div>
           </div>
         </div>
       </nav>
     </header>
     <div class="menu-right">
-      <button id="hamburger">
-        <span></span><span></span><span></span>
-      </button>
+      <button id="hamburger"><span></span><span></span><span></span></button>
 
       <aside class="navHamburger">Go Shopping</aside>
     </div>
-    
-  <div class="main-content">
-    <div class="grid-container">
-      
-      <div class="card" id="card1">
-       <a href="">
-        <img src="https://www.ikea.com/global/en/images/PAX_startpage_desktop_849341c5ce.jpg?f=xxxl"
-          alt="wardrobe with clothes">
-        <div>
-          <p>The PAX wardrobe system</p>
-        <h1>Spacious storage </h1>
-        </div>
-       </a> 
-      </div>
 
-      <div class="big-card" id="card2">
-        <a href="">
-          <video src="./assets/videos/startpage_asset_1_5fe6fe7372.mp4" alt="woman and clouds" controls autoplay></video>
-        <div>
-          <p>For the love of all things sleep!</p>
-          <h2>The big night in</h2>
+    <div class="main-content">
+      <div class="grid-container">
+        <section class="double-card card-section">
+          <div class="card">
+            <a href="">
+              <video
+                src="./assets/videos/pax_startpage_bd1a060fb1.mp4"
+                autoplay
+              ></video>
+              <div class="text-container">
+                <svg
+                  width="48"
+                  height="48"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  class="svg-arrow-cards"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4,12l8,8,1.41-1.41L7.83,13H20V11H7.83l5.59-5.59L12,4Z"
+                  ></path>
+                </svg>
+                <div class="text-title">
+                  <p>The PAX wardrobe system</p>
+                  <h2>Spacious storage for every space</h2>
+                </div>
+              </div>
+              <button class="player-button">
+                <svg
+                  class="pause-button"
+                  width="12"
+                  height="14"
+                  viewBox="0 0 12 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0H4V14H0V0Z" fill="currentColor"></path>
+                  <path d="M8 0H12V14H8V0Z" fill="currentColor"></path>
+                </svg>
+                <svg
+                  class="play-button"
+                  width="12"
+                  height="14"
+                  viewBox="0 0 12 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 7L0 14L6.1196e-07 0L12 7Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="">
+              <video
+                src="./assets/videos/startpage_asset_1_5fe6fe7372.mp4"
+                autoplay
+              ></video>
+              <div class="text-container">
+                <svg
+                  width="48"
+                  height="48"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  class="svg-arrow-cards"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4,12l8,8,1.41-1.41L7.83,13H20V11H7.83l5.59-5.59L12,4Z"
+                  ></path>
+                </svg>
+                <div class="text-title">
+                  <p>For the love of all things!</p>
+                  <h2>The big night in</h2>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section class="double-card card-section">
+          <div class="card" id="card3">
+            <a
+              href="https://www.ikea.com/global/en/stories/ideas-inspiration/any-excuse-to-celebrate-240821/"
+            >
+              <img
+                src="https://www.ikea.com/global/en/images/PH_197001_46799b0344.jpg?f=g"
+                alt="Food for celebrations"
+              />
+              <div class="text-container">
+                <svg
+                  width="48"
+                  height="48"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  class="svg-arrow-cards"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4,12l8,8,1.41-1.41L7.83,13H20V11H7.83l5.59-5.59L12,4Z"
+                  ></path>
+                </svg>
+                <div class="text-title">
+                  <p>Little ideas for festivity</p>
+                  <h2>Any excuse to celebrate</h2>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="card" id="card4">
+            <a href="">
+              <img
+                src=".\assets\img\PH_183506_1_9dfa488b3c (1).avif"
+                alt="IKEA's ambassador"
+              />
+              <div class="text-title">
+                <p>intervue with IKEA ambassador Akanksha</p>
+                <h2>IKEA at the One Young World Summit</h2>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <div class="big-card card-section" id="card5">
+          <a href="">
+            <img
+              src="https://www.ikea.com/global/en/images/PH_198689_e9654a0274.jpg?f=g"
+              alt="amrchairs and people in a white room"
+            />
+            <div>
+              <p>Nytillverkad collection</p>
+              <h2>Ever-evolving classics</h2>
+            </div>
+          </a>
         </div>
-        </a>
+
+        <section class="double-card card-section">
+          <div class="card" id="card6">
+            <a href="">
+              <img
+                src="https://www.ikea.com/global/en/images/PH_199178_7298adbed8.jpg?f=g"
+                alt="living room with light colors and wicker"
+              />
+              <div>
+                <p>New reasons to love rattan</p>
+                <h2>Woven beauties</h2>
+              </div>
+            </a>
+          </div>
+
+          <div class="card" id="card7">
+            <a href="">
+              <img
+                src=".\assets\img\Bedroom_1971_1b40a9c63c.avif"
+                alt="IKEA bedrooms"
+              />
+              <div>
+                <p>Design timeline</p>
+                <h2>IKEA bedrooms trhough the years</h2>
+              </div>
+            </a>
+          </div>
+        </section>
+        <div class="card" id="card8">
+          <a href="">
+            <img
+              src="https://www.ikea.com/global/en/images/PH_197253_c0762a5073.jpg?f=g"
+              alt="storage baskets"
+            />
+            <div>
+              <p>Style report</p>
+              <h2>Salt, pepper, zest</h2>
+            </div>
+          </a>
+        </div>
+
+        <div class="big-card" id="card9">
+          <a href="">
+            <img
+              src="https://www.ikea.com/global/en/images/HFRD_SUSTA_COLLAB_IKEA_and_Bim_01_1_603a7cf112.jpg?f=g"
+              alt="kitchen/living room"
+            />
+            <div>
+              <p>A room for community</p>
+              <h2>What's mine is yours</h2>
+            </div>
+          </a>
+        </div>
+
+        <section class="double-card card-section">
+          <div class="card" id="card10">
+            <a href="">
+              <img
+                src="./assets/img/231212_Sabah1750_20c8a5750b.webp"
+                alt="street with nature"
+              />
+              <div>
+                <p>IKEA at IUFRO World Congress 2024</p>
+                <h2>Forests for the future</h2>
+              </div>
+            </a>
+          </div>
+
+          <div class="card" id="card11">
+            <a href="">
+              <video
+                src="https://www.ikea.com/global/en/images/Startpage_hero_opt_820_4b3d0cc7b5.mp4"
+                alt="children"
+                controls
+                autoplay
+              ></video>
+              <div>
+                <p>IKEA play report 2024</p>
+                <h2>Make time for play!</h2>
+              </div>
+            </a>
+          </div>
+        </section>
+        <section class="double-card card-section">
+          <div class="card" id="card12">
+            <a href="">
+              <img
+                src="./assets/img/9c008a50c82a7d9f865873b4c85b694d_e3f1465e87.avif"
+                alt="baby dog"
+              />
+              <div>
+                <p>Campaign by IKEA UK</p>
+                <h2>Finding fur-ever home</h2>
+              </div>
+            </a>
+          </div>
+
+          <div class="big-card" id="card13">
+            <a href="">
+              <img
+                src="https://www.ikea.com/global/en/images/PH_196638_71139bdd52.jpg?f=xxl"
+                alt="garden"
+              />
+              <div>
+                <p>The BROGGAN collection</p>
+                <h2>Here comes the sun</h2>
+              </div>
+            </a>
+          </div>
+        </section>
+        <div class="card" id="card14">
+          <a href="">
+            <img
+              src="https://www.ikea.com/global/en/images/PH_179651_8c30bf1254.jpg?f=g"
+              alt="home's library for school or rooms"
+            />
+            <div>
+              <p>IKEA storage school</p>
+              <h2>Tidy up tipes for every room</h2>
+            </div>
+          </a>
+        </div>
+
+        <section class="double-card card-section">
+          <div class="card" id="card15">
+            <a href="">
+              <img
+                src="https://www.ikea.com/global/en/images/Alex_Seb_47362_672add2ea9.jpg?f=xxl"
+                alt="living room"
+              />
+              <div>
+                <p>An open invitation</p>
+                <h2>Life at home in the country</h2>
+              </div>
+            </a>
+          </div>
+
+          <div class="card" id="card16">
+            <img
+              src="https://www.ikea.com/global/en/images/PH_197324_7cee83b2b2.jpg?f=xxl"
+              alt="16th card's image"
+            />
+            <div>
+              <p>Style sport</p>
+              <h2>Fresh green for this season</h2>
+            </div>
+          </div>
+        </section>
+
+        <div class="big-card" id="card17">
+          <img
+            src=".\assets\img\PH_197398_a1134c8b3c (1).avif"
+            alt="colorful furniture"
+          />
+          <div>
+            <p>Amazing colours!</p>
+            <h2>The TESAMMANS collection</h2>
+          </div>
+        </div>
+
+        <section class="double-card card-section">
+          <div class="card" id="card18">
+            <img
+              src="https://www.ikea.com/global/en/images/PH_196617_5ea6fb0cc5.jpg?f=xxl"
+              alt="plants with vase"
+            />
+            <div>
+              <p>The DAKSJUS collection</p>
+              <h2>Let's get growing</h2>
+            </div>
+          </div>
+
+          <div class="card" id="card19">
+            <img
+              src="https://www.ikea.com/global/en/images/pet_softtoy_bone2_9fe3c334b5.jpg?f=xxl"
+              alt="dog and his pelouche"
+            />
+            <div>
+              <p>The UTSAD collection</p>
+              <h2>Helping pets feel at home</h2>
+            </div>
+          </div>
+        </section>
+
+        <div class="big-card" id="card20">
+          <video
+            src=".\assets\videos\Startpage_sustainability_highlights_acdffb460d.mp4"
+            alt="pictures on move"
+            controls
+            autoplay
+          ></video>
+          <div>
+            <p>IKEA Sustainability Report HighLights</p>
+            <h2>Takin action</h2>
+          </div>
+        </div>
+
+        <section class="double-card card-section">
+          <div class="card" id="card21">
+            <img
+              src="https://www.ikea.com/global/en/images/PH_198125_c9fe6151f6.jpg?f=xxl"
+              alt="work room"
+            />
+            <div>
+              <p>Let the future get to work</p>
+              <h2>The MITTZON system</h2>
+            </div>
+          </div>
+
+          <div class="card" id="card22">
+            <img
+              src=".\assets\img\GC_LAH_Ai_RFY_24_Multiple_Use_Hi_Res_Portrait_Rockyatu_Otoo_US_0e4f19b6ef.avif"
+              alt="woman at work in an artist residence"
+            />
+            <div>
+              <p>New work by IKEA Artist in Residence</p>
+              <h2>How we really live at home</h2>
+            </div>
+          </div>
+        </section>
+        <div class="big-card" id="card23">
+          <img
+            src=".\assets\img\PE_897524_680e4335ea.avif"
+            alt="Blue and white ceramic"
+          />
+          <div>
+            <p>The SILVERSIDA series</p>
+            <h2>Fantastic ceramic!</h2>
+          </div>
+        </div>
+
+        <section class="double-card card-section">
+          <div class="card" id="card24">
+            <a href="">
+              <img
+                src="https://www.ikea.com/global/en/images/GC_LAHR_FY_24_Photography_Sayaka_Japan_24_fd98aa5e4d.jpg?f"
+                alt=" child lives his life in his home"
+              />
+              <div>
+                <p>It's here! Check out the new</p>
+                <h2>Life at Home Report</h2>
+              </div>
+            </a>
+          </div>
+
+          <div class="card" id="card25">
+            <a href="">
+              <video
+                src="./assets/videos/yearbookstartpagefinal_4d3a80f8c6.mp4"
+                alt="year book"
+                controls
+                autoplay
+              ></video>
+              <div>
+                <p>Explore our first</p>
+                <h2>IKEA Yearbook!</h2>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <div class="card" id="card26">
+          <img
+            src=".\assets\img\PH_196463_f863ac01bb.avif"
+            alt="a woman handling a ring object"
+          />
+          <div>
+            <p>The DAJLIEN collection is here</p>
+            <h2>Design your home workout</h2>
+          </div>
+        </div>
+
+        <div class="card" id="card27">
+          <video
+            src=".\assets\videos\1984_blue_4069d62174.mp4"
+            alt="1984"
+            controls
+            autoplay
+          ></video>
+          <div>
+            <p>IKEA in the 80s</p>
+            <h2>Design flashback!</h2>
+          </div>
+        </div>
+
+        <div class="card" id="card28">
+          <img
+            src=".\assets\img\PH_150331_a7c699cff7.avif"
+            alt="a woman drawing"
+          />
+          <div>
+            <p>Global Refugee Forum 2023</p>
+            <h2>Providing opportunities and respect</h2>
+          </div>
+        </div>
+
+        <div class="card" id="card29">
+          <img
+            src=".\assets\img\Fahinde_Esther_GEAPP_1_3d0dfe6d61.avif"
+            alt="a woman standing"
+          />
+          <div>
+            <p>The IKEA foundation</p>
+            <h2>Reaching goals together</h2>
+          </div>
+        </div>
+
+        <div class="card" id="card30">
+          <img
+            src=".\assets\img\SODERHAMN_9bef35ea6e (1).avif"
+            alt="an orange couch"
+          />
+          <div>
+            <p>So, you think you're a fan?</p>
+            <h2>The IKEA icons quiz!</h2>
+          </div>
+        </div>
+
+        <div class="card" id="card31">
+          <img
+            src=".\assets\img\Linus_Malmo_9_070ec929aa_6ca24a1fa1.avif"
+            alt="Linus Malmo"
+          />
+          <div>
+            <p>Student life in Sweden</p>
+            <h2>Starting small in the city</h2>
+          </div>
+        </div>
+        <div class="card" id="card32">
+          <img
+            src=".\assets\img\Cecilia_Home_visit2_36040_3cf31c6015_0aca2b62b8.avif"
+            alt="cecilia's home"
+          />
+          <div>
+            <p>Family apartment in Sweden</p>
+            <h2>Packed with personality</h2>
+          </div>
+        </div>
+
+        <div class="card" id="card33">
+          <img
+            src=".\assets\img\japan_poster3_25_f73a263dda_5180172527_4d9f9f6567.avif"
+            alt="japan poster"
+          />
+          <div>
+            <p>IKEA around the world</p>
+            <h2>Big in Japan</h2>
+          </div>
+        </div>
+
+        <div class="card" id="card34">
+          <img
+            src=".\assets\img\portugal_poster_6771f4b936.avif"
+            alt="portugal poster"
+          />
+          <div>
+            <p>IKEA around the world</p>
+            <h2>Olá, Portugal</h2>
+          </div>
+        </div>
+
+        <div class="card" id="card35">
+          <img
+            src=".\assets\img\Livingrrom_16_8278620845_2811f7f35c.avif"
+            alt="a livingroom"
+          />
+          <div>
+            <p>Country living</p>
+            <h2>A visit to a Swedish farmhouse</h2>
+          </div>
+        </div>
+        <!-- DA FARE CARD 36 CON ALL'INTERNO LE CARD !!!-->
+        <div class="card" id="card37">
+          <img
+            src=".\assets\img\DSCF_8677_02a7e91765.webp"
+            alt="a rural landscape"
+          />
+          <div>
+            <p>Making design dreams come true, one project at a time</p>
+            <h2>The extra mile</h2>
+          </div>
+        </div>
       </div>
-<section class="double-card card-section">
-  <div class="card" id="card3">
-    <a href="https://www.ikea.com/global/en/stories/ideas-inspiration/any-excuse-to-celebrate-240821/">
-      <img src="https://www.ikea.com/global/en/images/PH_197001_46799b0344.jpg?f=g" alt="Food for celebrations">
-      <div class="text-container">
-        <svg
-        width="48"
-        height="48"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        aria-hidden="true"
-        class="svg-arrow-cards"
-      >
-        <path
-          fill="currentColor"
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M4,12l8,8,1.41-1.41L7.83,13H20V11H7.83l5.59-5.59L12,4Z"
-        ></path>
-      </svg>
-    <div class="text-title">
-      <p>Little ideas for festivity</p>
-    <h2>Any excuse to celebrate</h2>
     </div>
-  </div>
-    </a>
-  </div>
-
-  <div class="card" id="card4">
-    <a href="">
-      <img src=".\assets\img\PH_183506_1_9dfa488b3c (1).avif" alt="IKEA's ambassador">
-    <div class="text-title">
-      <p>intervue with IKEA ambassador Akanksha</p>
-    <h2>IKEA at the One Young World Summit</h2>
-    </div>
-    </a>
-  </div>
-  
-</section>
-
-      <div class="big-card  card-section" id="card5">
-        <a href="">
-          <img src="https://www.ikea.com/global/en/images/PH_198689_e9654a0274.jpg?f=g"
-          alt="amrchairs and people in a white room">
-        <div>
-          <p>Nytillverkad collection</p>
-        <h2>Ever-evolving classics</h2>
-        </div>
-        </a>
-      </div>
-
-      <section class="double-card card-section">
-      <div class="card" id="card6">
-        <a href="">
-          <img src="https://www.ikea.com/global/en/images/PH_199178_7298adbed8.jpg?f=g"
-          alt="living room with light colors and wicker">
-        <div>
-          <p>New reasons to love rattan</p>
-        <h2>Woven beauties</h2>
-        </div>
-        </a>
-      </div>
-
-      <div class="card" id="card7">
-        <a href="">
-          <img src=".\assets\img\Bedroom_1971_1b40a9c63c.avif" alt="IKEA bedrooms">
-        <div>
-          <p>Design timeline</p>
-        <h2>IKEA bedrooms trhough the years</h2>
-        </div>
-        </a>
-      </div>
-</section>
-      <div class="card" id="card8">
-        <a href="">
-          <img src="https://www.ikea.com/global/en/images/PH_197253_c0762a5073.jpg?f=g" alt="storage baskets">
-        <div>
-          <p>Style report</p>
-        <h2>Salt, pepper, zest</h2>
-        </div>
-        </a>
-      </div>
-
-      <div class="big-card" id="card9">
-        <a href="">
-          <img src="https://www.ikea.com/global/en/images/HFRD_SUSTA_COLLAB_IKEA_and_Bim_01_1_603a7cf112.jpg?f=g"
-          alt="kitchen/living room">
-        <div>
-          <p>A room for community</p>
-        <h2>What's mine is yours</h2>
-        </div>
-      </a>
-      </div>
-
-      <section class="double-card card-section">
-      <div class="card" id="card10">
-        <a href="">
-          <img src="./assets/img/231212_Sabah1750_20c8a5750b.webp" alt="street with nature">
-        <div>
-          <p>IKEA at IUFRO World Congress 2024</p>
-        <h2>Forests for the future</h2>
-        </div>
-        </a>
-      </div>
-
-      <div class="card" id="card11">
-        <a href="">
-          <video src="https://www.ikea.com/global/en/images/Startpage_hero_opt_820_4b3d0cc7b5.mp4" alt="children" controls
-          autoplay></video>
-        <div>
-          <p>IKEA play report 2024</p>
-        <h2>Make time for play!</h2>
-        </div>
-        </a>
-      </div>
-</section>
-<section class="double-card card-section">
-      <div class="card" id="card12">
-        <a href="">
-          <img src="./assets/img/9c008a50c82a7d9f865873b4c85b694d_e3f1465e87.avif" alt="baby dog">
-        <div>
-          <p>Campaign by IKEA UK</p>
-        <h2>Finding fur-ever home</h2>
-        </div>
-        </a>
-      </div>
-
-      <div class="big-card" id="card13">
-        <a href="">
-          <img src="https://www.ikea.com/global/en/images/PH_196638_71139bdd52.jpg?f=xxl" alt="garden">
-        <div>
-          <p>The BROGGAN collection</p>
-        <h2>Here comes the sun</h2>
-        </div>
-        </a>
-      </div>
-</section>
-      <div class="card" id="card14">
-        <a href="">
-          <img src="https://www.ikea.com/global/en/images/PH_179651_8c30bf1254.jpg?f=g"
-          alt="home's library for school or rooms">
-        <div>
-          <p>IKEA storage school</p>
-        <h2>Tidy up tipes for every room</h2>
-        </div>
-        </a>
-      </div>
-
-  <section class="double-card card-section">
-      <div class="card" id="card15">
-        <a href="">
-          <img src="https://www.ikea.com/global/en/images/Alex_Seb_47362_672add2ea9.jpg?f=xxl" alt="living room">
-        <div>
-          <p>An open invitation</p>
-        <h2>Life at home in the country</h2>
-        </div>
-        </a>
-      </div>
-
-      <div class="card" id="card16">
-        <img src="https://www.ikea.com/global/en/images/PH_197324_7cee83b2b2.jpg?f=xxl" alt="16th card's image">
-        <div>
-          <p>Style sport</p>
-        <h2>Fresh green for this season</h2>
-        </div>
-      </div>
-  </section>
-
-      <div class="big-card" id="card17">
-        <img src=".\assets\img\PH_197398_a1134c8b3c (1).avif" alt="colorful furniture">
-        <div>
-          <p>Amazing colours!</p>
-        <h2>The TESAMMANS collection</h2>
-        </div>
-      </div>
-
-      <section class="double-card card-section">
-      <div class="card" id="card18">
-        <img src="https://www.ikea.com/global/en/images/PH_196617_5ea6fb0cc5.jpg?f=xxl" alt="plants with vase">
-        <div>
-          <p>The DAKSJUS collection</p>
-        <h2>Let's get growing</h2>
-        </div>
-      </div>
-
-      <div class="card" id="card19">
-        <img src="https://www.ikea.com/global/en/images/pet_softtoy_bone2_9fe3c334b5.jpg?f=xxl"
-          alt="dog and his pelouche">
-        <div>
-          <p>The UTSAD collection</p>
-        <h2>Helping pets feel at home</h2>
-        </div>
-      </div>
-      </section>
-
-      <div class="big-card" id="card20">
-        <video src=".\assets\videos\Startpage_sustainability_highlights_acdffb460d.mp4" alt="pictures on move" controls
-          autoplay></video>
-        <div>
-          <p>IKEA Sustainability Report HighLights</p>
-        <h2>Takin action</h2>
-        </div>
-      </div>
-
-      <section class="double-card card-section">
-      <div class="card" id="card21">
-        <img src="https://www.ikea.com/global/en/images/PH_198125_c9fe6151f6.jpg?f=xxl" alt="work room">
-        <div>
-          <p>Let the future get to work</p>
-        <h2>The MITTZON system</h2>
-        </div>
-      </div>
-
-      <div class="card" id="card22">
-        <img src=".\assets\img\GC_LAH_Ai_RFY_24_Multiple_Use_Hi_Res_Portrait_Rockyatu_Otoo_US_0e4f19b6ef.avif"
-          alt="woman at work in an artist residence">
-        <div>
-          <p>New work by IKEA Artist in Residence</p>
-        <h2>How we really live at home</h2>
-        </div>
-      </div>
-</section>
-      <div class="big-card" id="card23">
-        <img src=".\assets\img\PE_897524_680e4335ea.avif" alt="Blue and white ceramic">
-        <div>
-          <p>The SILVERSIDA series</p>
-        <h2>Fantastic ceramic!</h2>
-        </div>
-      </div>
-
-<section class="double-card card-section">
-  
-      <div class="card" id="card24">
-        <a href="">
-        <img src="https://www.ikea.com/global/en/images/GC_LAHR_FY_24_Photography_Sayaka_Japan_24_fd98aa5e4d.jpg?f"
-          alt=" child lives his life in his home">
-        <div>
-          <p>It's here! Check out the new</p>
-          <h2>Life at Home Report</h2>
-      </div>
-    </a>
-      </div>
-
-
-    <div class="card" id="card25">
-      <a href="">
-      <video src="./assets/videos/yearbookstartpagefinal_4d3a80f8c6.mp4" alt="year book" controls autoplay></video>
-      <div>
-        <p>Explore our first</p>
-        <h2>IKEA Yearbook!</h2>
-      </div>
-    </a>
-    </div>
-</section>
-
-
-    <div class="card" id="card26">
-      <img src=".\assets\img\PH_196463_f863ac01bb.avif" alt="a woman handling a ring object">
-      <div>
-        <p>The DAJLIEN collection is here</p>
-        <h2>Design your home workout</h2>
-      </div>
-    </div>
-
-    <div class="card" id="card27">
-      <video src=".\assets\videos\1984_blue_4069d62174.mp4" alt="1984" controls autoplay></video>
-      <div>
-        <p>IKEA in the 80s</p>
-        <h2>Design flashback!</h2>
-      </div>
-    </div>
-
-    <div class="card" id="card28">
-      <img src=".\assets\img\PH_150331_a7c699cff7.avif" alt="a woman drawing">
-      <div>
-        <p>Global Refugee Forum 2023</p>
-        <h2>Providing opportunities and respect</h2>
-      </div>
-    </div>
-
-    <div class="card" id="card29">
-      <img src=".\assets\img\Fahinde_Esther_GEAPP_1_3d0dfe6d61.avif" alt="a woman standing">
-      <div>
-        <p>The IKEA foundation</p>
-        <h2>Reaching goals together</h2>
-      </div>
-    </div>
-
-    <div class="card" id="card30">
-      <img src=".\assets\img\SODERHAMN_9bef35ea6e (1).avif" alt="an orange couch">
-      <div>
-        <p>So, you think you're a fan?</p>
-        <h2>The IKEA icons quiz!</h2>
-      </div>
-    </div>
-
-    <div class="card" id="card31">
-      <img src=".\assets\img\Linus_Malmo_9_070ec929aa_6ca24a1fa1.avif" alt="Linus Malmo">
-      <div>
-        <p>Student life in Sweden</p>
-        <h2>Starting small in the city</h2>
-      </div>
-
-    </div>
-    <div class="card" id="card32">
-      <img src=".\assets\img\Cecilia_Home_visit2_36040_3cf31c6015_0aca2b62b8.avif" alt="cecilia's home">
-      <div>
-        <p>Family apartment in Sweden</p>
-        <h2>Packed with personality</h2>
-      </div>
-    </div>
-
-    <div class="card" id="card33">
-      <img src=".\assets\img\japan_poster3_25_f73a263dda_5180172527_4d9f9f6567.avif" alt="japan poster">
-      <div>
-        <p>IKEA around the world</p>
-        <h2>Big in Japan</h2>
-      </div>
-    </div>
-
-    <div class="card" id="card34">
-      <img src=".\assets\img\portugal_poster_6771f4b936.avif" alt="portugal poster">
-      <div>
-        <p>IKEA around the world</p>
-        <h2>Olá, Portugal</h2>
-      </div>
-    </div>
-
-    <div class="card" id="card35">
-      <img src=".\assets\img\Livingrrom_16_8278620845_2811f7f35c.avif" alt="a livingroom">
-      <div>
-        <p>Country living</p>
-        <h2>A visit to a Swedish farmhouse</h2>
-      </div>
-    </div>
-    <!-- DA FARE CARD 36 CON ALL'INTERNO LE CARD !!!-->
-     <div class="card" id="card37">
-      <img src=".\assets\img\DSCF_8677_02a7e91765.webp" alt="a rural landscape">
-      <div>
-        <p>Making design dreams come true, one project at a time</p>
-        <h2>The extra mile</h2>
-      </div>
-     </div>
-     </div>
-  </div>
 
     <footer>
       <div class="top-footer">
@@ -600,24 +765,15 @@
           <div class="buttons">
             <button id="button1" class="light-switch switch1">
               <img class="smart-home" src="./assets/svg/smart-home.svg" />
-              <img
-                class="switch-on"
-                src="./assets/svg/smart-home_hover.svg"
-              />
+              <img class="switch-on" src="./assets/svg/smart-home_hover.svg" />
             </button>
             <button id="button2" class="light-switch switch2">
               <img class="smart-home" src="./assets/svg/smart-home.svg" />
-              <img
-                class="switch-on"
-                src="./assets/svg/smart-home_hover.svg"
-              />
+              <img class="switch-on" src="./assets/svg/smart-home_hover.svg" />
             </button>
             <button id="button3" class="light-switch switch3">
               <img class="smart-home" src="./assets/svg/smart-home.svg" />
-              <img
-                class="switch-on"
-                src="./assets/svg/smart-home_hover.svg"
-              />
+              <img class="switch-on" src="./assets/svg/smart-home_hover.svg" />
             </button>
           </div>
         </div>
@@ -670,7 +826,5 @@
         navHamburger.style.display = `block`;
       });
     </script>
- 
-</body>
-
+  </body>
 </html>

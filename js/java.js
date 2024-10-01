@@ -1,0 +1,1 @@
+const pauseButton = document.querySelector("pause-button")
