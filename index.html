@@ -30,11 +30,14 @@
             </button>
 
             <div class="mini-picker-container">
-              <div class="mini-picker">
-                <button class="open-minipicker" id="picker">
-                  <span>Go Shopping:<strong>IKEA.ch</strong>(de)</span>
+              <div class="mini-picker-container-preview-row">
+                <div class="drawer-opener">
+                  Go shopping:
+                  <span class="selected-website"
+                    >IKEA.ch <span style="font-weight: 400">(de)</span></span
+                  >
 
-                  <div>
+                  <div class="chevron">
                     <svg
                       width="16"
                       height="9"
@@ -42,7 +45,6 @@
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                       aria-hidden="true"
-                      class=""
                     >
                       <path
                         fill-rule="evenodd"
@@ -52,10 +54,29 @@
                       ></path>
                     </svg>
                   </div>
-                </button>
+                </div>
+                <div class="website-link">
+                  <div class="arrow-website">
+                    <svg
+                      width="24"
+                      height="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      class="arrow2-website"
+                    >
+                      <path
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4,12l8,8,1.41-1.41L7.83,13H20V11H7.83l5.59-5.59L12,4Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
               </div>
 
-              <div class="close-minipicker">
+              <div class="minipicker-list">
                 <ul>
                   <li>
                     <button class="li-picker">IKEA.ch(Deutsch)</button>

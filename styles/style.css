@@ -19,9 +19,9 @@ nav {
   width: 100%;
   margin: auto;
   align-items: center;
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  transition: top 0.3s;
+  transition: top 0.3s; */
 }
 
 .menu-left {
@@ -101,6 +101,12 @@ nav {
   align-content: center;
   border-radius: 8px;
 }
+
+.mini-picker-container-preview-row {
+  display: flex;
+  flex-direction: row;
+}
+
 .mini-picker {
   border: 10px solid #ffe53a;
   background-color: #ffe53a;
@@ -119,14 +125,28 @@ nav {
   background-color: rgb(255, 240, 148);
   margin: 8px;
 }
-.close-minipicker {
+.minipicker-list {
   border: 10px solid #ffe53a;
   background-color: rgb(255, 240, 148);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
+.selected-website {
+  font-weight: 600;
+}
 
-.close-minipicker ul {
+.drawer-opener {
+  display: flex;
+  background-color: #ffdb00;
+  border-top-left-radius: 8px;
+  /* border-top-right-radius: 8px; */
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem 0.5rem 0.75rem;
+}
+.chevron {
+  margin-left: 24px;
+}
+.minipicker-list ul {
   list-style: none;
   background-color: rgb(255, 240, 148);
   text-decoration: none;
@@ -330,7 +350,7 @@ footer {
   flex: 1;
   /* 
   gap: 60px; */
-  padding: 15px;
+  padding: 20px;
   z-index: 999;
   /* width: 30vh;
   height: 40vh; */
@@ -342,8 +362,8 @@ footer {
 .container-block-yellow {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  border: 10px solid #ffe53a;
-  background-color: #ffe53a;
+  border: 10px solid #ffdb00;
+  background-color: #ffdb00;
   display: flex;
   list-style: none;
   justify-content: space-between;
@@ -378,6 +398,31 @@ footer {
   position: relative;
 }
 
+.arrow-website {
+  float: right;
+  transform: scaleX(-1);
+  border: 2px solid black;
+  border-radius: 50%;
+  height: 4vh;
+  width: 4vh;
+  background-color: black;
+  color: white;
+  position: relative;
+}
+
+.arrow2-website {
+  left: 10.3%;
+  position: absolute;
+  top: 11.5%;
+}
+
+.website-link {
+  background-color: #ffdb00;
+  border: 2px solid #ffdb00;
+  /* border-top-left-radius: 8px; */
+  border-top-right-radius: 8px;
+  border-left: 1px solid white;
+}
 .go-shopping-arrow {
   left: 14%;
   position: absolute;
@@ -439,7 +484,7 @@ footer {
 
 .box-yellow {
   display: none;
-  border: 10px solid #ffe53a;
+  border: 10px solid #ffdb00;
 }
 
 .box-light-yellow {
@@ -552,13 +597,16 @@ footer {
   padding: 1rem;
   border: none;
   cursor: pointer;
-  background-color: #ffe53a;
+  background-color: #ffdb00;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
 
 .close-Ikea:hover {
   background-color: rgb(255, 240, 148);
+}
+
+.open-mini-picker {
 }
 
 .open-button-list {
