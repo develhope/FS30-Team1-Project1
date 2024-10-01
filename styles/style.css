@@ -90,6 +90,7 @@ nav {
   display: flex;
   flex-direction: column;
   border: none;
+  margin-right: 65px;
 }
 #hamburger span {
   display: none;
