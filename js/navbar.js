@@ -10,6 +10,8 @@ const icon = document.querySelector(".rotate-icon");
 
 const menu = document.querySelector(".menu");
 
+const miniPickerOpener = document.querySelector(".drawer-opener");
+
 let isShowing = false;
 
 openButton.addEventListener(`click`, () => {
@@ -62,3 +64,10 @@ window.onscroll = function () {
   }
   prevScrollPos = currentScrollPos;
 };
+
+miniPickerOpener.addEventListener("click", () => {
+  console.log("ciao");
+  document
+    .querySelector(".minipicker-list-container")
+    .classList.toggle("minipicker-list-container-closed");
+});

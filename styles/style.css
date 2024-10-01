@@ -131,6 +131,16 @@ nav {
   padding-top: 3px;
 }
 
+.minipicker-list-container-closed {
+  display: none;
+}
+
+.minipicker-list-container {
+  background-color: #ffdb00;
+  padding: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
 .search-box-minipicker {
   display: flex;
   align-items: center;
