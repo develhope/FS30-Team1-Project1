@@ -126,10 +126,25 @@ nav {
   margin: 8px;
 }
 .minipicker-list {
-  border: 10px solid #ffe53a;
+  border: 10px solid #ffdb00;
   background-color: rgb(255, 240, 148);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+
+.search-box-minipicker {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  margin: 8px;
+  padding: 12px;
+}
+
+.search-box-minipicker > input {
+  border: none;
+  height: 18px;
+  margin-left: 8px;
 }
 .selected-website {
   font-weight: 600;
@@ -146,13 +161,30 @@ nav {
 .chevron {
   margin-left: 24px;
 }
-.minipicker-list ul {
+.minipicker-list > ul {
   list-style: none;
   background-color: rgb(255, 240, 148);
   text-decoration: none;
   overflow-y: scroll;
   height: 200px;
   border-radius: 8px;
+}
+
+.minipicker-list > ul::-webkit-scrollbar {
+  width: 5px;
+}
+
+.minipicker-list > ul::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.minipicker-list > ul::-webkit-scrollbar-thumb {
+  background: #615f5f;
+  border-radius: 2px;
+}
+
+.minipicker-list > ul::-webkit-scrollbar-thumb:hover {
+  background: #747272;
 }
 
 footer {
