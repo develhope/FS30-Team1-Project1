@@ -1,18 +1,35 @@
-const playPauseButton = document.getElementsByClassName("player-button");
-      const video = document.getElementsByClassName("video-card");
-      let isPlaying = false;
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll('.card');
+  
+  cards.forEach(card => {
+      const video = card.querySelector('.video-card');
+      const button = card.querySelector('.player-button');
+      const playIcon = button.querySelector('.play');
+      const pauseIcon = button.querySelector('.pause');
 
-      playPauseButton.addEventListener("click", function () {
-        const icon = playPauseButton.querySelector(".icon");
+      // Set the initial state based on autoplay
+      video.play(); // Make sure the video is playing
+      playIcon.style.display = 'none';   // Hide play icon
+      pauseIcon.style.display = 'block';  // Show pause icon
 
-        if (isPlaying) {
-          video.pause();
-          icon.classList.remove("pause");
-          icon.classList.add("play");
-        } else {
-          video.play();
-          icon.classList.remove("play");
-          icon.classList.add("pause");
-        }
-        isPlaying = !isPlaying;
+      button.addEventListener('click', function (event) {
+          event.preventDefault(); // Prevent default behavior if inside a link
+          
+          if (video.paused) {
+              video.play();
+              playIcon.style.display = 'none';  // Hide play icon
+              pauseIcon.style.display = 'block'; // Show pause icon
+          } else {
+              video.pause();
+              playIcon.style.display = 'block';   // Show play icon
+              pauseIcon.style.display = 'none';    // Hide pause icon
+          }
       });
+
+      // Handle video ended event
+      video.addEventListener('ended', function () {
+          playIcon.style.display = 'block'; // Show play icon when video ends
+          pauseIcon.style.display = 'none';  // Hide pause icon
+      });
+  });
+});

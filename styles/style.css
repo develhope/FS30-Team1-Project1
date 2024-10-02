@@ -92,6 +92,10 @@ left: 5%;
 
 }
 
+.card:hover .big-text-container{
+  left: 5%;
+}
+
 .link-item{
   display: flex;
 }
@@ -106,14 +110,16 @@ left: 5%;
   transition: left 0.3s ease;
 }
 
-.title-shadow{
+.big-text-container{
   position: absolute;
-  height: 300px;
-  width: 300px;
+  left: -4%;
   bottom: 0;
-  left: 0;
-  background-color: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)) ;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  transition: left 0.3s ease;
 }
+
 
 .svg-arrow-cards{
   align-self: center;
@@ -131,46 +137,81 @@ transition: opacity 0.5s ease;
 .text-title{
  padding: 24px;
  width: 350px;
+ font-size: 16px;
+}
 
+.big-text-title{
+  padding: 24px;
+  width: 350px;
+  font-size: 16px;
 }
 
 .text-title h2{
-  font-size: 2rem;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.big-text-title h2{
+  font-size: 51px;
   line-height: 1.2;
 }
 
 .player-button{
-  position: absolute;
+  background-color: black; 
+  border: 0;
+  border-radius: 50%; 
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  transition: background-color 0.3s;
+  position: absolute; 
   bottom: 0;
   right: 0;
-  margin: 24px;
-  height: 60px;
-  width: 60px;
-  border-radius: 100%;
-  background-color: black;
-  border: 0px;
-  cursor: pointer;
-  color: white;
-  font-size: 24px;
-  font-weight: ;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  transform: translate(-50%, -50%);
+  margin-bottom: -5px}
 
 .player-button:hover{
-background-color: rgb(61, 61, 61);
+background-color: rgb(87, 87, 87);
+}
+
+.player-button:active{
+  background-color: black;
 }
 
 .player-button svg{
-;
 align-self: center;
 }
 
+.icon {
+  width: 15px;
+  height: 15px;
+  color: white;
+}
+
  .card video{
-height: 100%;
-width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 0;
+  position: relative;
  }
+
+ .video {
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+}
+
+.video-card{
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
  .card-section{
   height: 500px;

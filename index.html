@@ -35,17 +35,19 @@
     <div class="main-content">
       <div class="grid-container">
         <section class="double-card card-section">
-          <div class="card">
+          <div class="card" id="card1">
             <a class="link-item" href="">
               <video
               class="video-card"
                 src="./assets/videos/pax_startpage_bd1a060fb1.mp4"
                 autoplay
+                muted
+                loop
               ></video>
              <button class="player-button">
               <div class="button-text">
                 <svg
-                  class="pause-button"
+                  class="pause icon"
                   width="12"
                   height="14"
                   viewBox="0 0 12 14"
@@ -57,7 +59,7 @@
                   <path d="M8 0H12V14H8V0Z" fill="currentColor"></path>
                 </svg>
                 <svg
-                  class="play-button"
+                  class="play icon"
                   width="12"
                   height="14"
                   viewBox="0 0 12 14"
@@ -74,7 +76,6 @@
               </div>
               </button>
               
-              <div class="title-shadow"></div>
               <div class="text-container">
                 <svg
                   width="48"
@@ -100,12 +101,47 @@
             </a>
           </div>
 
-          <div class="card">
-            <a href="">
+          <div class="card" id="card2">
+            <a class="link-item" href="">
               <video
+              class="video-card"
                 src="./assets/videos/startpage_asset_1_5fe6fe7372.mp4"
                 autoplay
+                muted
+                loop
               ></video>
+              <button class="player-button">
+                <div class="button-text">
+                  <svg
+                    class="pause icon"
+                    width="12"
+                    height="14"
+                    viewBox="0 0 12 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path d="M0 0H4V14H0V0Z" fill="currentColor"></path>
+                    <path d="M8 0H12V14H8V0Z" fill="currentColor"></path>
+                  </svg>
+                  <svg
+                    class="play icon"
+                    width="12"
+                    height="14"
+                    viewBox="0 0 12 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 7L0 14L6.1196e-07 0L12 7Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                  <span class="icon play"></span>
+                </div>
+                </button>
+                
               <div class="text-container">
                 <svg
                   width="48"
@@ -170,24 +206,58 @@
                 src=".\assets\img\PH_183506_1_9dfa488b3c (1).avif"
                 alt="IKEA's ambassador"
               />
+              <div class="text-container">
+                <svg
+                  width="48"
+                  height="48"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  class="svg-arrow-cards"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4,12l8,8,1.41-1.41L7.83,13H20V11H7.83l5.59-5.59L12,4Z"
+                  ></path>
+                </svg>
               <div class="text-title">
-                <p>intervue with IKEA ambassador Akanksha</p>
+                <p>Interview with IKEA ambassador Akanksha</p>
                 <h2>IKEA at the One Young World Summit</h2>
               </div>
+              </div>
             </a>
-          </div>
+        </div>
         </section>
 
-        <div class="big-card card-section" id="card5">
+        <div class="card" id="card5">
           <a href="">
             <img
               src="https://www.ikea.com/global/en/images/PH_198689_e9654a0274.jpg?f=g"
               alt="amrchairs and people in a white room"
             />
-            <div>
+            <div class="big-text-container">
+              <svg
+                  width="48"
+                  height="48"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  class="svg-arrow-cards"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4,12l8,8,1.41-1.41L7.83,13H20V11H7.83l5.59-5.59L12,4Z"
+                  ></path>
+                </svg>
+            <div class="big-text-title">
               <p>Nytillverkad collection</p>
               <h2>Ever-evolving classics</h2>
             </div>
+          </div>
           </a>
         </div>
 
@@ -198,10 +268,12 @@
                 src="https://www.ikea.com/global/en/images/PH_199178_7298adbed8.jpg?f=g"
                 alt="living room with light colors and wicker"
               />
-              <div>
+              <div class="text-container">
+              <div class="text-title">
                 <p>New reasons to love rattan</p>
                 <h2>Woven beauties</h2>
               </div>
+            </div>
             </a>
           </div>
 
@@ -218,6 +290,7 @@
             </a>
           </div>
         </section>
+
         <div class="card" id="card8">
           <a href="">
             <img
