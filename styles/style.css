@@ -768,20 +768,20 @@ footer {
 
 .switch1 {
   position: absolute;
-  top: 5em;
-  left: 80em;
+  top: 1.5em;
+  left: -25.5em;
 }
 
 .switch2 {
   position: absolute;
-  top: 1.5em;
-  left: 27em;
+  top: 4em;
+  left: 24em;
 }
 
 .switch3 {
   position: absolute;
-  top: 5.5em;
-  right: -103.3em;
+  top: 5em;
+  left: 48.7em;
 }
 
 .light-switch {
