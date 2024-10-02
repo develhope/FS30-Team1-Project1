@@ -7,6 +7,7 @@
     <title>Ikea</title>
     <link rel="stylesheet" href="./styles/style.css" type="text/css" />
     <script src="./js/footer.js" defer></script>
+    <script src="./js/content.js" defer></script>
   </head>
 
   <body>
@@ -35,11 +36,41 @@
       <div class="grid-container">
         <section class="double-card card-section">
           <div class="card">
+            <button class="player-button">
+              <svg
+                class="pause-button"
+                width="12"
+                height="14"
+                viewBox="0 0 12 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path d="M0 0H4V14H0V0Z" fill="currentColor"></path>
+                <path d="M8 0H12V14H8V0Z" fill="currentColor"></path>
+              </svg>
+              <svg
+                class="play-button"
+                width="12"
+                height="14"
+                viewBox="0 0 12 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 7L0 14L6.1196e-07 0L12 7Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </button>
             <a href="">
               <video
+              class="video-card"
                 src="./assets/videos/pax_startpage_bd1a060fb1.mp4"
                 autoplay
               ></video>
+              <div class="title-shadow"></div>
               <div class="text-container">
                 <svg
                   width="48"
@@ -61,34 +92,7 @@
                   <h2>Spacious storage for every space</h2>
                 </div>
               </div>
-              <button class="player-button">
-                <svg
-                  class="pause-button"
-                  width="12"
-                  height="14"
-                  viewBox="0 0 12 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <path d="M0 0H4V14H0V0Z" fill="currentColor"></path>
-                  <path d="M8 0H12V14H8V0Z" fill="currentColor"></path>
-                </svg>
-                <svg
-                  class="play-button"
-                  width="12"
-                  height="14"
-                  viewBox="0 0 12 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M12 7L0 14L6.1196e-07 0L12 7Z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
-              </button>
+              
             </a>
           </div>
 
