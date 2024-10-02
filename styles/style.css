@@ -357,11 +357,154 @@ body {
 }
 .img-item {
   object-position: 50% 50%;
-
   height: 700px;
   min-width: 768px;
   position: absolute;
 } */
+
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.carousel::-webkit-scrollbar {
+  height: 2px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 8px;
+}
+
+.carousel::-webkit-scrollbar-track {
+  background: #43434362;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  border-radius: 8px;
+  width: 100%;
+  background-color: #eaedf1;
+  box-sizing: border-box;
+  position: relative;
+  justify-content: space-between;
+}
+
+.carousel-content-text {
+  flex: 0 0 30%;
+  margin-right: 28px;
+  color: black;
+  /* padding-right: 100px; */
+}
+
+.carousel-wrapper {
+  position: relative;
+  /* height: 366.375px;
+  width: 796px; */
+  align-self: center;
+  flex: 1;
+  overflow: hidden;
+}
+
+.item {
+  flex: 0 0 auto;
+  list-style: none;
+  background-color: white;
+  border-radius: 8px;
+  width: 300px;
+  margin-right: 20px;
+  scroll-snap-align: start;
+  box-shadow: 1px;
+}
+
+.item-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-img-container {
+  width: 100%;
+  overflow: hidden;
+  height: 400px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.img-item {
+  width: 100%;
+  height: auto;
+
+  object-fit: cover;
+}
+
+.item-title-container {
+  padding: 1rem;
+}
+
+.carousel-heading {
+  font-size: 3.1875rem;
+  letter-spacing: -0.0925rem;
+  font-weight: 700;
+  line-height: 108%;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.carousel-paragraph {
+  text-align: left;
+  word-wrap: break-word;
+  line-height: 162%;
+  font-size: 1rem;
+}
+.navigation {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.previous {
+  /* left: 535px; */
+  left: calc(30% + 25px);
+}
+
+.next {
+  right: 40px;
+}
+
+.navigation::before {
+  content: '';
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: scale(0.8);
+}
+
+.navigation.previous::before {
+  transform: rotate(135deg);
+}
+
+.navigation.next::before {
+  transform: rotate(-45deg);
+}
+
 /*FOOTER*/
 footer {
   width: 100%;
