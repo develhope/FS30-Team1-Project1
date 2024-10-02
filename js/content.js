@@ -1,21 +1,18 @@
-const pauseButton = document.querySelector("pause-button");
-const playButton = document.querySelector("play-button");
-const playerButton = document.querySelector("player-button");
+const playPauseButton = document.getElementsByClassName("player-button");
+      const video = document.getElementsByClassName("video-card");
+      let isPlaying = false;
 
-var isPaused = false;
-const video = document.querySelector("video-card");
+      playPauseButton.addEventListener("click", function () {
+        const icon = playPauseButton.querySelector(".icon");
 
-playButton.display = "none"
-
-pauseButton.addEventListener("click", () => {
-    if (video.paused) {
-       video.play();
-       playButton.display = "none";
-       pauseButton.display = "block";
-    } else {
-        video.pause();
-        pauseButton.display = "none";
-        playButton.display = "block";
-    }
-       
-} )
+        if (isPlaying) {
+          video.pause();
+          icon.classList.remove("pause");
+          icon.classList.add("play");
+        } else {
+          video.play();
+          icon.classList.remove("play");
+          icon.classList.add("pause");
+        }
+        isPlaying = !isPlaying;
+      });

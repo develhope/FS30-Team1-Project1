@@ -92,6 +92,10 @@ left: 5%;
 
 }
 
+.link-item{
+  display: flex;
+}
+
 .text-container{
   position: absolute;
   left: -8%;
@@ -145,10 +149,21 @@ transition: opacity 0.5s ease;
   border-radius: 100%;
   background-color: black;
   border: 0px;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  font-weight: ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-button:hover{
+background-color: rgb(61, 61, 61);
 }
 
 .player-button svg{
-color: white;
+;
 align-self: center;
 }
 
