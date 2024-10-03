@@ -116,7 +116,18 @@ body {
   display: flex;
   transition: left 0.3s ease;
 }
-
+.big-text-container {
+  position: absolute;
+  left: -2%;
+  bottom: 0;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  transition: left 0.3s ease;
+}
+#big-left {
+  left: -2%;
+}
 .title-shadow {
   position: absolute;
   left: -4%;
@@ -244,11 +255,7 @@ body {
   height: 100%;
   object-fit: cover;
 }
-.big-card-text-container {
-  display: flex;
-  align-items: center;
-  color: white;
-}
+
 #card20 {
   color: white;
 }
