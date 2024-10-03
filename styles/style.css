@@ -273,16 +273,43 @@ body {
   overflow: hidden;
 }
 .big-card-video-container {
+  width: 150%;
+  height: 500px;
   border-radius: 8px;
   object-fit: cover;
   overflow: clip;
+  margin: 8px;
+  justify-self: flex-end;
+}
+.big-card-content {
+  display: flex;
+  align-items: center;
+}
+.big-card-relative {
+  position: relative;
+  color: white;
+}
+
+.big-card-relative .big-text-container {
+  position: absolute;
+  left: 5%; /* Start slightly off-screen */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  transition: left 0.3s ease;
+  flex: 1;
+  z-index: 1;
 }
 .big-card video {
-  height: 400px;
-  width: 400px;
+  height: 100%;
+  width: 100%;
   object-position: 50% 50%;
   padding-right: 30px;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 .big-card img {
@@ -290,7 +317,12 @@ body {
   width: 100%;
   object-fit: cover;
 }
-
+.card-too-large {
+  height: 700px;
+}
+#card27 {
+  background-color: rgb(117, 194, 238);
+}
 .carousel {
   display: flex;
   overflow-x: scroll;
