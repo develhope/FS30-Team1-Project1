@@ -103,8 +103,8 @@ body {
   left: 5%;
 }
 
-.link-item {
-  display: flex;
+.link-item{
+ display: flex;
 }
 
 .text-container {
@@ -140,15 +140,15 @@ body {
   transition: opacity 0.5s ease;
 }
 
-.text-title {
-  padding: 24px;
-  width: 350px;
-  font-size: 16px;
+.text-title{
+ padding: 24px;
+ width: 400px;
+ font-size: 16px;
 }
 
 .big-text-title {
   padding: 24px;
-  width: 350px;
+  width: 740px;
   font-size: 16px;
 }
 
@@ -190,6 +190,14 @@ body {
 
 .player-button svg {
   align-self: center;
+}
+
+.player-button .pause{
+  display: block;
+}
+
+.player-button .play{
+  display: none;
 }
 
 .icon {
